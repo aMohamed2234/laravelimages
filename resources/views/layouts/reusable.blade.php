@@ -11,7 +11,7 @@
     
 <nav class="bg-white shadow-md py-4">
   <div class="container mx-auto px-4 flex justify-between items-center">
-    <a class="text-xl font-bold text-gray-800" href="#">Navbar</a>
+    <a class="text-xl font-bold text-gray-800" href="#">Alumni</a>
     <button id="nav-toggle" class="lg:hidden px-3 py-2 border rounded text-gray-800 border-gray-300 focus:outline-none">
       ☰
     </button>
@@ -30,18 +30,7 @@
 
 @yield('content')
 
-<!-- Footer Section -->
-<footer class="bg-white text-center py-4 mt-3 border-t">
-    <div class="container mx-auto px-4">
-        <p class="mb-1 text-gray-500">&copy; {{ date('Y') }} Events Hub. All Rights Reserved.</p>
-        <div class="flex justify-center space-x-4">
-            <a href="/" class="text-gray-500 hover:text-gray-700">Home</a>
-            <a href="/showMembers" class="text-gray-500 hover:text-gray-700">Events</a>
-            <a href="{{ route('login') }}" class="text-gray-500 hover:text-gray-700">Login</a>
-            <a href="{{ route('register') }}" class="text-gray-500 hover:text-gray-700">Register</a>
-        </div>
-    </div>
-</footer>
+
 
 <script>
   document.getElementById('nav-toggle').addEventListener('click', function() {

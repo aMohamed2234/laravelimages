@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <title>Admin Dashboard</title>
     <script src="https://cdn.tailwindcss.com"></script>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -15,9 +16,6 @@
             <nav>
                 <a href="/dashboard" class="block py-2 px-3 rounded hover:bg-gray-700">Dashboard</a>
                 <a href="{{route('events.index')}}" class="block py-2 px-3 rounded hover:bg-gray-700">Events</a>
-                <a href="#" class="block py-2 px-3 rounded hover:bg-gray-700">Jobs</a>
-                <a href="#" class="block py-2 px-3 rounded hover:bg-gray-700">Events</a>
-                <a href="#" class="block py-2 px-3 rounded hover:bg-gray-700">Settings</a>
             </nav>
         </aside>
 

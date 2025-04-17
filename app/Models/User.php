@@ -41,4 +41,10 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    // Add to the User model
+     public function blogPosts(): HasMany
+{
+       return $this->hasMany(BlogPost::class);
+}
 }
